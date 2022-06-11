@@ -1,0 +1,102 @@
+body{
+    margin: 0px;
+    /* background: #322f2f; */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(90deg,rgb(21, 161, 255),rgb(255, 27, 190));
+    border-radius: 10px;
+}
+.name{
+    text-align: center;
+}
+.main .name h2{
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-top: 120px;
+}
+.hh1{
+    color: rgb(0, 64, 255);
+}
+.hh2{
+    color: rgb(255, 0, 217);
+}
+.hh3{
+    color: rgb(255, 0, 123);
+}
+.searchbar{
+    border: none;
+    width: 82%;
+    margin: auto;
+    display: flex;
+    height: 44px;
+    border-radius: 5px;
+    padding: 5px 10px 5px 5px ;
+    margin-top: 80px;
+    box-shadow: 0 1px 5px 0 rgb(32 33 36 / 58%);
+}
+.searchbar img{
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px grey;
+}
+#searchBox{
+    width: 100%;
+    border: none;
+    outline: 0;
+    padding: 0px 0px 0px 10px ;
+    margin-left: 5px;
+    background: white;
+    font-size: 17px;
+}
+#search{
+    width: 40px;
+    background: white;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.results{
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 0 10px 0 gray;
+    padding: 0 0 3px 0 ;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 30px;
+}
+.results a{
+    text-decoration: none;
+    transition: 1s;
+}
+
+.results img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.results h4{
+    text-align: start;
+    margin-left: 10px;
+    color: rgb(4, 4, 4);
+    text-decoration: none;
+    letter-spacing: 1px;
+    margin-right: 10px;
+    transition: 300ms;
+}
+.results h4:hover{
+    color: rgb(31, 80, 255);
+}
+.results h5{
+    text-align: start;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: rgb(237, 100, 180);
+}
+@media (min-width:765px) {
+    .results{
+        margin: revert;
+        display: inline-block;
+    }
+}

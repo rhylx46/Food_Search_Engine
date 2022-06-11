@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find Your Recipe</title>
+    <link rel="stylesheet" href="./css/paging.css">
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Creator: Yuxuan Liu 刘雨轩 -->
+<!--    分页的库-->
+    <script src="./js/paging.js"></script>
+    <style>
+        #about a {
+            color: rgb(45, 116, 247);
+            text-decoration: none;
+        }
+        #about p {
+            font-size: 15px;
+            text-align: center;
+            padding: 20px 0px 20px 0px;
+            font-weight: 700;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="name" aria-selected="off">
+        <h2 class="hh1">Find</h2>
+        <h2 class="hh2">Your</h2>
+        <h2 class="hh3">Recipe</h2>
+    </div>
+    <div class="searchbar">
+        <input type="text" placeholder="Chinese, Italian, or Beef, Tomato, Pork, Chicken, etc." id="searchBox" autocomplete="off" />
+        <button id="search" onClick="searchRecipes">
+            <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="17"
+                    height="17"
+                    fill="currentColor"
+                    class="bi bi-search"
+                    viewBox="0 0 16 16"
+            >
+                <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                ></path>
+            </svg>
+        </button>
+    </div>
+    <div id="about"></div>
+</div>
+<div style="margin-top:30px;text-align: center;margin-bottom: 100px;" class="displaySearch">
+</div>
+<div id="pageTool"></div>
+<script src="./js/index.js"></script>
+</body>
+</html>
